@@ -1,7 +1,7 @@
 # IN WIP
 
 
-´´´JS
+```JS
 import { uniq, uniqBy, uniqByProps } from "fabrika/uniq";
 
 //uniq
@@ -27,4 +27,4 @@ let objectArray = [
 ]
 let result = uniqBy(objectArray, ["x", "y"])
 console.log(result) // [{x:1, y:1}, {x:2, y:1}, {x:2, y:3}]
-´´´
+```
