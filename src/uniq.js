@@ -27,10 +27,10 @@ export function uniqBy(array, property, out) {
         temp = cur[property]
         if(!seenValue[temp]) {
             seenValue[temp] = true
-            acc.push(cur);
+            acc.push(cur)
         }
         
-        return acc;
+        return acc
     }, out !== undefined ? out : [])
 }
 
@@ -45,16 +45,16 @@ export function uniqByProps(array, properties) {
     let i,j,counter,hasAnother,element,element2
 
     let copyArray = array.concat()
-    for (i = 0; i < copyArray.length; i++) {
-        element = copyArray[i];
+    for (i = 0 i < copyArray.length i++) {
+        element = copyArray[i]
         
         hasAnother = false
-        for (j = i + 1; j < copyArray.length; j++) {
-            element2 = copyArray[j];
+        for (j = i + 1 j < copyArray.length j++) {
+            element2 = copyArray[j]
             counter = 0
             properties.forEach(p => {
                             if(element[p] === element2[p]) {
-                                counter++;
+                                counter++
                             }
                         })
 
