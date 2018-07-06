@@ -1,4 +1,4 @@
-import {uniq, uniqBy,uniqByProps} from "../src/uniq"
+import {uniq, uniqBy,uniqByProps} from "../uniq"
 const deepFreeze = require("deepfreeze")
 
 describe("uniq testing", () => {

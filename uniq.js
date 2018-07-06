@@ -7,7 +7,7 @@
  * @param {any} array 
  * @returns {Array}
  */
-export function uniq(array) {
+function uniq(array) {
     return Array.from(new Set(array))
 }
 
@@ -18,7 +18,7 @@ export function uniq(array) {
  * @param {any} out (optional)
  * @returns {Array}
  */
-export function uniqBy(array, property, out) {
+function uniqBy(array, property, out) {
     
     let seenValue = {}
     let temp
@@ -40,16 +40,16 @@ export function uniqBy(array, property, out) {
  * @param {string[]} property
  * @returns {Array}
  */
-export function uniqByProps(array, properties) {
+function uniqByProps(array, properties) {
 
     let i,j,counter,hasAnother,element,element2
 
     let copyArray = array.concat()
-    for (i = 0 i < copyArray.length i++) {
+    for (i = 0; i < copyArray.length; i++) {
         element = copyArray[i]
         
         hasAnother = false
-        for (j = i + 1 j < copyArray.length j++) {
+        for (j = i + 1; j < copyArray.length; j++) {
             element2 = copyArray[j]
             counter = 0
             properties.forEach(p => {
@@ -59,7 +59,7 @@ export function uniqByProps(array, properties) {
                         })
 
             if(counter === properties.length) {
-                let sliced = copyArray.splice(j, 1)
+                copyArray.splice(j, 1)
                 j--
             }
         }
@@ -67,4 +67,10 @@ export function uniqByProps(array, properties) {
     }
     
     return copyArray
+}
+
+module.exports = {
+    uniq,
+    uniqBy,
+    uniqByProps
 }
