@@ -9,7 +9,8 @@
   "scripts": {
     "test": "jest specs/",
     "test:watch": "jest specs/ --watchAll",
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage",
+    "lint": "eslint *.js specs/*.spec.js"
   },
   "devDependencies": {
     "babel-jest": "^23.2.0",
