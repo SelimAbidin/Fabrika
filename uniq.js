@@ -27,7 +27,7 @@ function uniqBy(array, property, out) {
         temp = cur[property]
         if(!seenValue[temp]) {
             seenValue[temp] = true
-            acc.push(cur)
+            acc[acc.length] = cur
         }
         
         return acc

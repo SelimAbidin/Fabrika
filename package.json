@@ -8,7 +8,8 @@
   "license": "MIT",
   "scripts": {
     "test": "jest specs/",
-    "test:watch": "jest specs/**/*.spec.js --watchAll"
+    "test:watch": "jest specs/ --watchAll",
+    "coverage":"jest --coverage"
   },
   "devDependencies": {
     "babel-jest": "^23.2.0",

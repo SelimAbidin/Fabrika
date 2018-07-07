@@ -22,7 +22,6 @@ describe("uniq testing", () => {
     })
 })
 
-
 describe("uniqBy testing", () => {
 
     it("should be objects with duplicate x values removed", () => {
@@ -57,6 +56,23 @@ describe("uniqBy testing", () => {
     })
 
 })
+
+describe("uniq out testing", () => {
+
+    it("should be objects with duplicate x values removed", () => {
+        const array = [
+            {x:1, y:1},
+            {x:2, y:1},
+            {x:1, y:1},
+        ]
+        let emptyArray = []
+        const uniqs = uniqBy(array, "x", emptyArray)
+        expect(uniqs).toEqual([{x:1, y:1},{x:2, y:1}])
+        expect(uniqs).toBe(emptyArray)
+    })
+
+})
+
 
 describe("uniqByProps testing", () => {
 
