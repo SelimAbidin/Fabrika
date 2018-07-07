@@ -1,4 +1,11 @@
-# IN WIP
+# fabrika
+
+fabrika is a javascript utility library for array objects that strongly support tree-shaking and performance.
+
+## fabrika is under development.
+however some functions can be used and probably will not be changed, it is your own risk to use. Just keep it in your mind.
+
+![fabrika](fabrika.png)
 
 
 ```JS
