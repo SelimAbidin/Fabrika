@@ -9,12 +9,18 @@
   "scripts": {
     "test": "jest specs/",
     "test:watch": "jest specs/ --watchAll",
-    "coverage":"jest --coverage"
+    "coverage": "jest --coverage"
   },
   "devDependencies": {
     "babel-jest": "^23.2.0",
     "babel-preset-env": "^1.7.0",
     "deepfreeze": "^2.0.0",
+    "eslint": "^5.0.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
     "jest": "^23.3.0"
   },
   "dependencies": {}
