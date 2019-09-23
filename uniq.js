@@ -1,23 +1,10 @@
 
-/**
- * creates a new array from the input array and remove second repeating elements.
- * [3,1,2,3] >> uniq >> [3,1,2]
- * @param {Array} array
- * @param {any} array
- * @returns {Array}
- */
-function uniq (array) {
+function uniq(array) {
     return Array.from(new Set(array))
 }
 
-/**
- *
- * @param {Array} array
- * @param {any} property
- * @param {any} out (optional)
- * @returns {Array}
- */
-function uniqBy (array, property, out) {
+
+function uniqBy(array, property, out) {
     let seenValue = {}
     let temp
     return array.reduce((acc, cur) => {
@@ -31,13 +18,7 @@ function uniqBy (array, property, out) {
     }, out !== undefined ? out : [])
 }
 
-/**
- *
- * @param {Array} array
- * @param {string[]} property
- * @returns {Array}
- */
-function uniqByProps (array, properties) {
+function uniqByProps(array, properties) {
     let i, j, counter, element, element2
 
     let copyArray = array.concat()

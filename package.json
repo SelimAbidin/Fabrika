@@ -6,6 +6,7 @@
   "repository": "https://github.com/SelimAbidin/Fabrika.git",
   "author": "Selim Abidin",
   "license": "MIT",
+  "types": "index.d.ts",
   "scripts": {
     "test": "jest specs/",
     "test:watch": "jest specs/ --watchAll",
