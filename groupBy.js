@@ -1,8 +1,6 @@
 
-
-function groupBy(array, key) {
+function groupBy (array, key) {
     return array.reduce((acc, curr) => {
-
         let valueKey = curr[key]
 
         if (!Array.isArray(acc[valueKey])) acc[valueKey] = []
