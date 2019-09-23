@@ -1,4 +1,6 @@
 [![CircleCI](https://circleci.com/gh/SelimAbidin/Fabrika/tree/master.svg?style=svg)](https://circleci.com/gh/SelimAbidin/Fabrika/tree/master)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/SelimAbidin/Fabrika.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/SelimAbidin/Fabrika/context:javascript)
+
 
 # fabrika
 fabrika is a javascript utility library for array objects that strongly support tree-shaking and performance.
