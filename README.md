@@ -1,5 +1,5 @@
 # fabrika
-
+[![CircleCI](https://circleci.com/gh/SelimAbidin/Fabrika/tree/master.svg?style=svg)](https://circleci.com/gh/SelimAbidin/Fabrika/tree/master)
 fabrika is a javascript utility library for array objects that strongly support tree-shaking and performance.
 
 ## fabrika is under development.
