@@ -1,9 +1,9 @@
 
-export function noFalse(array) {
+export function noFalse (array) {
     return array.filter(i => i)
 }
 
-function replaceFalseWith(array, value) {
+function replaceFalseWith (array, value) {
     return array.map(i => {
         if (i) {
             return i

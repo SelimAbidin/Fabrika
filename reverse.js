@@ -1,5 +1,5 @@
 
-function reverse(array) {
+function reverse (array) {
     return array.concat().reverse()
 }
 

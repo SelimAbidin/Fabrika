@@ -1,10 +1,9 @@
 
-function uniq(array) {
+function uniq (array) {
     return Array.from(new Set(array))
 }
 
-
-function uniqBy(array, property, out) {
+function uniqBy (array, property, out) {
     let seenValue = {}
     let temp
     return array.reduce((acc, cur) => {
@@ -18,7 +17,7 @@ function uniqBy(array, property, out) {
     }, out !== undefined ? out : [])
 }
 
-function uniqByProps(array, properties) {
+function uniqByProps (array, properties) {
     let i, j, counter, element, element2
 
     let copyArray = array.concat()
