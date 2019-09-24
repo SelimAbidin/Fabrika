@@ -9,6 +9,7 @@
   "types": "index.d.ts",
   "scripts": {
     "test": "jest specs/",
+    "test:coveralls": "jest specs/ --coverageReporters=text-lcov | coveralls",
     "test:watch": "jest specs/ --watchAll",
     "coverage": "jest --coverage",
     "lint": "eslint *.js specs/*.spec.js"
@@ -16,6 +17,7 @@
   "devDependencies": {
     "babel-jest": "^23.2.0",
     "babel-preset-env": "^1.7.0",
+    "coveralls": "^3.0.6",
     "deepfreeze": "^2.0.0",
     "eslint": "^5.0.1",
     "eslint-config-standard": "^11.0.0",
