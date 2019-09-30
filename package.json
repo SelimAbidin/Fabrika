@@ -7,15 +7,20 @@
   "author": "Selim Abidin",
   "license": "MIT",
   "types": "index.d.ts",
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+  },
   "scripts": {
     "test": "jest specs/",
     "test:watch": "jest specs/ --watchAll",
-    "coverage": "jest --coverage",
+    "coverage": "jest && codecov",
     "lint": "eslint *.js specs/*.spec.js"
   },
   "devDependencies": {
     "babel-jest": "^23.2.0",
     "babel-preset-env": "^1.7.0",
+    "codecov": "^3.6.1",
     "coveralls": "^3.0.6",
     "deepfreeze": "^2.0.0",
     "eslint": "^5.0.1",
